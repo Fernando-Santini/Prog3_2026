@@ -1,0 +1,57 @@
+Exercício 1 – Sistema de Funcionários (Herança básica)
+Objetivo: Criar uma estrutura de classes usando herança.
+Enunciado:
+Crie uma classe base chamada Funcionario com os seguintes atributos:
+nome
+salario
+E um método:
+calcularBonus() → retorna 10% do salário
+Depois, crie duas classes filhas:
+Gerente
+Desenvolvedor
+Cada uma deve herdar de Funcionario.
+Regras:
+Instancie pelo menos 1 objeto de cada classe
+Mostre nome, salário e bônus
+Exemplo esperado:
+Nome: João
+Cargo: Gerente
+Bônus: 2000
+
+Nome: Maria
+Cargo: Desenvolvedor
+Bônus: 800
+
+Exercício 2 – Sobrescrita de Métodos (Polimorfismo inicial)
+Objetivo: Aplicar sobrescrita (override) de métodos.
+Enunciado:
+Agora modifique o sistema anterior:
+A classe Gerente deve sobrescrever o método calcularBonus() para retornar 20% do salário
+A classe Desenvolvedor deve retornar 15% do salário
+Regras:
+Use o mesmo método (calcularBonus) em todas as classes
+Não criar métodos diferentes — apenas sobrescrever
+Desafio extra:
+Crie um método exibirDados() dentro da classe base e reutilize nas filhas.
+Exemplo esperado:
+Gerente: bônus maior que Desenvolvedor
+
+Exercício 3 – Polimorfismo na prática (Lista de objetos)
+Objetivo: Aplicar polimorfismo real usando coleção de objetos.
+Enunciado:
+Crie um array contendo vários funcionários (misturando Gerente e Desenvolvedor).
+Depois:
+Percorra o array com um foreach
+Para cada objeto, chame:
+exibirDados()
+calcularBonus()
+Regras:
+NÃO usar if para verificar tipo (instanceof)
+O comportamento deve acontecer automaticamente (polimorfismo)
+Exemplo esperado:
+Funcionario: João (Gerente)
+Bônus: 2000
+
+Funcionario: Maria (Desenvolvedor)
+Bônus: 1200
+
